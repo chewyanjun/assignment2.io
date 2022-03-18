@@ -1,0 +1,142 @@
+
+<html lang="en">
+
+<head>
+
+<title>3D origami</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+
+.content {
+
+
+height: 1450px;
+
+
+
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<div class="topnav">
+
+<a class="clicked" href="index.html">Home</a>
+
+<a href="about3dorigami.html">About 3D origami</a>
+
+<a href="howto.html">How to fold 3D origami</a>
+
+<a href="design.html">3D origami designs</a>
+
+</div>
+
+
+
+<div class="content">
+<img src="images/piecesbackground.jpg" width="1400" height="450">
+<br>
+<br>
+<h1 style="font-size:200%;">My Journey</h1>
+<br>
+<div style="border: 1px solid black">
+<pre>
+As a child I have always been into arts and crafts, especially origami. My first encounter with 3D origami was in
+
+upper primary when I was fascinated by my friend's 3D origami penguin which she brought to school. After which, I began
+
+watching many YouTube videos on 3D origami which led me to learn more about the world of 3D origami. I like to compare
+
+3D origami with lego because both of them allow one to express their creativity by creating almost anything imaginable.
+
+I started off with smaller projects such as penguins and swans before moving on to bigger projects such as wedding 
+
+ornaments. The following images are wedding gifts that I made using 3D origami. 
+</div>
+</pre>
+<br>
+<br>
+<br>
+<div class="container">
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 2</div>
+      <img src="images/wedding1.jpg" style= width="600" height="400">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 2</div>
+      <img src="images/wedding2.jpg" style="width="400" height="500"">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+<br>
+<br>
+Hopefully, as you explore this website, you would have a better idea about 3D origami and maybe inspire you to create your own!
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</div>
+
+
+
+<div class="footer">
+
+<p>3D origami</p>
+
+</div>
+
+
+
+</body>
+
+</html>
+
+
+

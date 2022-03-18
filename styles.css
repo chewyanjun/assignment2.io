@@ -1,0 +1,94 @@
+
+* {
+  box-sizing: border-box;
+  font-family: Times New Roman;
+  }
+
+body {
+  margin: 0;
+  font-family: Times New Roman;
+  }
+
+.topnav {
+  overflow: hidden;
+  Background-color:rgb(230,75,125);
+  Top: 0;
+  Width: 100%;
+  Position: fixed;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 120px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  Background-color:lightpink;
+  color: black;
+}
+
+.content {
+  background-color:beige;
+  text-align: center;
+  padding: 10px;
+  height: 2000px; 
+}
+
+.footer {
+  background-color: lightpink;
+  text-align: center;
+  padding: 3px;
+  Font-size: 10px
+}
+
+.clicked {
+ Background-color:lightpink;
+  color: black;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  margin-left: -300px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 400px;
+  border-radius: 5px 0 0 5px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
